@@ -1,0 +1,31 @@
+{
+  "name": "back-end-meetup",
+  "version": "1.0.0",
+  "description": "build the backend for a meetup organizer!",
+  "main": "server/server.js",
+  "scripts": {
+    "react:compile": "webpack --watch"
+  },
+  "author": "Hack Reactor Curriculum Team",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "express": "^4.16.3",
+    "mongoose": "^6.5.0",
+    "morgan": "^1.9.0",
+    "npm": "^6.1.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  }
+}
