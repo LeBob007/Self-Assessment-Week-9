@@ -4,12 +4,13 @@
   "description": "build the backend for a meetup organizer!",
   "main": "server/server.js",
   "scripts": {
-    "react:compile": "webpack --watch"
+    "react:compile": "webpack --watch",
+    "react:dev": "nodemon server/index.js"
   },
   "author": "Hack Reactor Curriculum Team",
   "license": "UNLICENSED",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^1.2.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
