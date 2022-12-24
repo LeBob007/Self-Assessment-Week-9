@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="main">
       <AttendeeForm addAttendee={addAttendee} />
-      <AttendeeList attendees={attendees} />
+      <AttendeeList attendees={attendees} getAttendees={getAttendees}/>
     </div>
   );
 };

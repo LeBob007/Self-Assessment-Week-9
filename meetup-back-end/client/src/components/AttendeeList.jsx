@@ -13,14 +13,14 @@ const groupBy = (list, property) => {
   return groups;
 };
 
-const AttendeeList = ({ attendees }) => {
+const AttendeeList = ({ attendees, getAttendees }) => {
   const groups = groupBy(attendees, "skillLevel");
   return (
     <div className="attendees">
       <h2>Attendees</h2>
-      <AttendeeSkillList title="Expert" attendees={groups.expert} />
-      <AttendeeSkillList title="Intermediate" attendees={groups.intermediate} />
-      <AttendeeSkillList title="Beginner" attendees={groups.beginner} />
+      <AttendeeSkillList title="Expert" attendees={groups.expert} getAttendees={getAttendees} />
+      <AttendeeSkillList title="Intermediate" attendees={groups.intermediate} getAttendees={getAttendees} />
+      <AttendeeSkillList title="Beginner" attendees={groups.beginner} getAttendees={getAttendees} />
     </div>
   );
 };
